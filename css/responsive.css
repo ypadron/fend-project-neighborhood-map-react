@@ -1,0 +1,100 @@
+/* Responsive  CSS  */
+@media screen and (min-width: 400px) {
+/* ======================          ====================== */
+
+/* ====================================================== */
+/* Minor Breakpoint */
+@media screen and (min-width: 500px)  {
+/* ======================          ====================== */
+  #main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+    position: relative;
+    /* background-color: #f3f3f3; */
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+  }
+
+  .filter-options select {
+    display: flex;
+    border: 1px solid #fff;
+    font-size: .75em;
+    height: 50px;
+    letter-spacing: 0;
+    margin: auto;
+    padding: 10px 0px;
+    width: 100%;
+  }
+
+@media screen and (min-width: 600px)  {
+/* ====================================================== */
+  .filter-options select {
+    font-size: .80em;
+  }
+}
+@media screen and (min-width: 700px) {
+/* ====================== Map =========================== */
+  .filter-options select {
+    font-size: 1em;
+  }
+
+  #map-container  {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 950px) {
+/* ====================== Navigation ====================== */
+
+/* ========================  ============================== */
+  #main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+    position: relative;
+    /* background-color: #f3f3f3; */
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+  }
+
+  #sidebar  {
+    display: block;
+    background-color: darkcyan;
+  }
+/* ==========================     Map    ========================== */
+  #map-container  {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+/* ====================== Locations Filtering ====================== */
+  .filter-options {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+  }
+  .filter-options select {
+    /* font-size: 1em; */
+  }
+
+/* ====================== Locations Listing ====================== */
+  #locations-list {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    padding-left: 1em;
+
+  }
+  #locations-list li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* width: 100%; */
+  }
+
+}
