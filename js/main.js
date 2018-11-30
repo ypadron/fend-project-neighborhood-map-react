@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   // initMap(); // added
   createNeighborhoodsHTML();
-  // createLocationsHTML();
+  createLocationsHTML();
   // updateLocations();
 });
 
@@ -32,13 +32,12 @@ function createNeighborhoodsHTML() {
     option.innerHTML = uniqueNeighborhood;
     option.value = uniqueNeighborhood;
     select.append(option);
-    console.log(option);
   });
+  console.log(select);
 };
 
 console.log(locations);
 
-/*
 let locationsList = locations.map((v, i) => locations[i].title);
 console.log(locationsList);
 
@@ -54,9 +53,7 @@ function createLocationsHTML() {
     title.innerHTML = location.title;
     li.append(title);
 
-    // return li;
-    // ul.append(li);
-    console.log(li);
+    ul.append(li);
   });
+  console.log(ul);
 };
-*/
