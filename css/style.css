@@ -25,18 +25,17 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 */
 
 #main-content {
+  display: block;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
 #sidebar  {
-  /* display: grid; */
   background-color: darkcyan;
-  /* height: 400px; */
   width: 100%;
 }
-
+/*
 #sidebar
 .options-box  {
   background: #fff;
@@ -48,7 +47,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: left;
   width: 340px;
 }
-
+ */
 h2  {
   color: #fff;
   font-size: 1.25em;
@@ -57,7 +56,7 @@ h2  {
 }
 
 h4  {
-  color: #fff;
+  color: red;
   font-size: 1em;
   padding-left: 1em;
   padding-bottom: .5em;
@@ -65,6 +64,7 @@ h4  {
   text-align: ;
 }
 
+/* ====================== Locations Filtering ====================== */
 .filter-options {
   display: flex;
   justify-content: space-around;
@@ -82,30 +82,32 @@ h4  {
   width: 100%;
 }
 
-ul  {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+/* ====================== Locations Listing ====================== */
+#locations-list {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-left: 1em;
+  /* list-style: none; */
+  /* padding: 0; */
+  /* margin: 0; */
 
-ul #locations-list {
+}
+#locations-list li {
+  list-style: none;
   color: #fff;
-  margin-bottom: 15px;
-  }
-
-li  {
-  list-style: none;
-  /* visibility: collapse; */
   padding: .25em 0;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  /* width: 100%; */
 }
 
+/* ==========================     Map    ========================== */
 #map {
   bottom: 0px;
   height: 400px;
-  width:100%;
-  /* left: 325px; */
-  /* position: relative; */
-  /* right: 0px; */
+  max-width: 320px;
 }
 
 
