@@ -1,0 +1,42 @@
+{
+  "locations": [{
+  "title": "Castillo De Los Tres Reyes Del Morro",
+  "latlng": {lat: 23.15076, lng: -82.356233},
+  "neighborhood": "Old Havana"
+  },
+  {
+  "title": "El Capitolio - National Capitol Building",
+  "latlng": {lat: 23.135178, lng: -82.359542},
+  "neighborhood": "Old Havana"
+  },
+  {
+  "title": "Almacenes San Jose Market",
+  "latlng": {lat: 23.129878, lng: -82.349035},
+  "neighborhood": "Old Havana"
+  },
+  {
+  "title": "The Cathedral Havana",
+  "latlng": {lat: 23.14137, lng: -82.351908},
+  "neighborhood": "Old Havana"
+  },
+  {
+  "title": "Hotel Ambos Mundos",
+  "latlng": {lat: 23.139444, lng: -82.350556},
+  "neighborhood": "Old Havana"
+  },
+  {
+  "title": "Coppelia Ice Cream Parlor",
+  "latlng": {lat: 23.1397532, lng: -82.3864961},
+  "neighborhood": "Vedado"
+  },
+  {
+  "title": "Paseo del Prado",
+  "latlng": {lat: 23.1388888, lng: -82.3614639},
+  "neighborhood": "Centro Havana"
+  },
+  {
+  "title": "ChinaTown",
+  "latlng": {lat: 23.1339125, lng: -82.3681122},
+  "neighborhood": "Centro Havana"}
+]
+}
