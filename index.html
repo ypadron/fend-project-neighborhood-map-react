@@ -18,55 +18,22 @@
   <main id="main-content">
     <section id="sidebar" class="options-box">
     <h2>Points of Interest</h2>
-
-      <!-- <input id="show-points" type="button" value="Show Points"> -->
+      <!-- <input id="show-points" type="button" class="sort" data-sort="neighborhood"> -->
+      <!-- <button class="sort" data-sort="neighborhood"> -->
+        <!-- Sort by neighborhood -->
+      <!-- </button> -->
       <!-- <input id="hide-points" type="button" value="Hide Points"> -->
 
       <div class="filter-options">
         <select role="listbox" aria-labelledby="select neighborhood" tabindex="0" id="neighborhoods-select" name="neighborhoods" onChange="updateLocations()">
-          <option value="all" label="Filter by Neighborhood">Filter by Neighborhood</option>
-          <!-- <optgroup value="old-havana" label="Old Havana"/> -->
-            <!-- <option value="old-havana">Castillo De Los Tres Reyes Del Morro</option> -->
-            <!-- <option value="old-havana">El Capitolio - National Capitol Building</option> -->
-            <!-- <option value="old-havana">Almacenes San Jose Market</option> -->
-            <!-- <option value="old-havana">The Cathedral Havana</option> -->
-            <!-- <option value="old-havana">Hotel Ambos Mundos</option> -->
-          <!-- <optgroup value="centro-havana" label="Central Havana"> -->
-            <!-- <option value="centro-havana">Paseo del Prado</option> -->
-            <!-- <option value="centro-havana">ChinaTown</option> -->
-          <!-- <optgroup value="vedado" label="Vedado"> -->
-            <!-- <option value="vedado">Coppelia Ice Cream Parlor</option> -->
-        </select>
+          <option value="all">Filter by Neighborhood</option>
       </div>
-
-      <ul id="locations-list">
-
-        <!-- <li class="neighborhoods"> Old Havana  -->
-          <!-- <ul id="old-havana" class="locations"> -->
-            <li><h4>Castillo De Los Tres Reyes Del Morro</h4></li>
-            <li><h4>El Capitolio - National Capitol Building</h4></li>
-            <li><h4>Almacenes San Jose Market</h4></li>
-            <li><h4>The Cathedral Havana</h4></li>
-            <li><h4>Hotel Ambos Mundos</h4></li>
-          <!-- </ul> -->
-        <!-- </li> -->
-        <!-- <li class="neighborhoods"> -->
-          <!-- <ul id="centro-havana" class="locations"> -->
-            <li><h4>Paseo del Prado</h4></li>
-            <li><h4>ChinaTown</h4></li>
-          <!-- </ul> -->
-        <!-- </li> -->
-        <!-- <li class="neighborhoods"> -->
-          <!-- <ul id="vedado" class="locations"> -->
-            <li><h4>Coppelia Ice Cream Parlor</h4></li>
-          <!-- </ul> -->
-        <!-- </li> -->
-      </ul>
+      <ul id="locations-list"></ul>
     </section>
 
     <section id="map-container">
       <div id="map" role="application">
-        <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=23.113593,-82.366596&zoom=13&size=500x500&maptype=styledMapType&scale=2&markers=size:mid%7Ccolor:orange%7C23.15076,-82.356233%7C23.135178,-82.359542%7C23.129878,-82.349035%7C23.14137,-82.351908%7C23.139444,-82.350556%7C23.1397532,-82.3864961%7C23.1388888,-82.3614639%7C23.1339125,-82.3681122&key=AIzaSyA3VW2i53mJhGtRk7WlAOiupswtwdw5Xrw&v=3" alt="Google Map of Havana, Cuba"> -->
+        <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=23.113593,-82.366596&zoom=13&size=500x375&maptype=styledMapType&scale=2&markers=size:mid%7Ccolor:orange%7C23.15076,-82.356233%7C23.135178,-82.359542%7C23.129878,-82.349035%7C23.14137,-82.351908%7C23.139444,-82.350556%7C23.1397532,-82.3864961%7C23.1388888,-82.3614639%7C23.1339125,-82.3681122&key=AIzaSyA3VW2i53mJhGtRk7WlAOiupswtwdw5Xrw&v=3" alt="Google Map of Havana, Cuba"> -->
       </div>
     </section>
   </main>
@@ -75,7 +42,7 @@
     <!-- <p>Copyright (c) 2018 Padron Havana by Neighborhood Map (React) Project. All Rights Reserved</p> -->
   <!-- </footer> -->
 
-  <!-- <script type="application/javascript" charset="utf-8" src="js/main.js"></script> -->
+  <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <!--Load JS API asynchronously here  -->
   <!--
   <script async defer
