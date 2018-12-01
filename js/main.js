@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   // initMap(); // added
   createNeighborhoodsHTML();
-  createLocationsHTML();
+  fillLocationsHTML();
   // updateLocations();
 });
 
@@ -41,19 +41,43 @@ console.log(locations);
 let locationsList = locations.map((v, i) => locations[i].title);
 console.log(locationsList);
 
- // * Fill all locations HTML
-function createLocationsHTML() {
-  const ul = document.getElementById('locations-list');
+/**
+ * Update page and (map) for current locations.
+ */
+let updateLocations = (locations) => {
+  const nSelect = document.getElementById('neighborhoods-select');
+  const nIndex = nSelect.selectedIndex;
+  const neighborhood = nSelect[nIndex].value;
 
-  locations.forEach(location => {
-    const li = document.createElement('li');
-    li.setAttribute('value', location.neighborhood);
+  function getLocationByNeighborhood(neighborhood)  {
+    if (error)  {
+      console.log("error");
+    } else {
+      let results = locations;
+      if (neighborhood != 'all')  { // filter by neeighborhood
+        results = locations.filter(location => location.neighborhood == neighborhood);
+        fillLocationsHTML();
+        }
+      }
+    }
+  };
 
-    const title = document.createElement('h4');
-    title.innerHTML = location.title;
-    li.append(title);
+// * Fill all locations HTML.
+let fillLocationsHTML = () => {
+ const ul = document.getElementById('locations-list');
+ locations.forEach(location => {
+   ul.append(createLocationHTML(location));
+ });
+ console.log(ul);
+};
 
-    ul.append(li);
-  });
-  console.log(ul);
+// * Create all locations HTML.
+let createLocationHTML = (location) => {
+ const li = document.createElement('li');
+ li.setAttribute('value', location.neighborhood);
+
+ const title = document.createElement('h4');
+ title.innerHTML = location.title;
+ li.append(title);
+ return li;
 };
